@@ -60,10 +60,10 @@ const WidgetsBrand = (props) => {
               />
             ),
           })}
-          icon={<CIcon icon={cibFacebook} height={52} className="my-4 text-white" />}
+          icon={<CIcon height={52} className="my-4 text-white" />}
           values={[
-            { title: 'friends', value: '89K' },
-            { title: 'feeds', value: '459' },
+            {value: 'Performance' },
+            {value: '459' },
           ]}
           style={{
             '--cui-card-cap-bg': '#3b5998',
@@ -94,10 +94,10 @@ const WidgetsBrand = (props) => {
               />
             ),
           })}
-          icon={<CIcon icon={cibTwitter} height={52} className="my-4 text-white" />}
+          icon={<CIcon  height={52} className="my-4 text-white" />}
           values={[
-            { title: 'followers', value: '973k' },
-            { title: 'tweets', value: '1.792' },
+            { value: 'Availability' },
+            {  value: '1.792' },
           ]}
           style={{
             '--cui-card-cap-bg': '#00aced',
@@ -128,17 +128,17 @@ const WidgetsBrand = (props) => {
               />
             ),
           })}
-          icon={<CIcon icon={cibLinkedin} height={52} className="my-4 text-white" />}
+          icon={<CIcon height={52} className="my-4 text-white" />}
           values={[
-            { title: 'contacts', value: '500' },
-            { title: 'feeds', value: '1.292' },
+            {  value: 'Quality' },
+            {  value: '1.292' },
           ]}
           style={{
             '--cui-card-cap-bg': '#4875b4',
           }}
         />
       </CCol>
-      <CCol sm={6} xl={4} xxl={3}>
+      {/* <CCol sm={6} xl={4} xxl={3}>
         <CWidgetStatsD
           color="warning"
           {...(props.withCharts && {
@@ -169,7 +169,7 @@ const WidgetsBrand = (props) => {
             { title: 'meetings', value: '4' },
           ]}
         />
-      </CCol>
+      </CCol> */}
     </CRow>
   )
 }

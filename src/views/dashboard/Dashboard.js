@@ -64,127 +64,127 @@ const Dashboard = () => {
   ]
 
   const progressGroupExample1 = [
-    { title: 'Monday', value1: 34, value2: 78 },
-    { title: 'Tuesday', value1: 56, value2: 94 },
-    { title: 'Wednesday', value1: 12, value2: 67 },
-    { title: 'Thursday', value1: 43, value2: 91 },
-    { title: 'Friday', value1: 22, value2: 73 },
-    { title: 'Saturday', value1: 53, value2: 82 },
-    { title: 'Sunday', value1: 9, value2: 69 },
+    // { title: 'Monday', value1: 34, value2: 78 },
+    // { title: 'Tuesday', value1: 56, value2: 94 },
+    // { title: 'Wednesday', value1: 12, value2: 67 },
+    // { title: 'Thursday', value1: 43, value2: 91 },
+    // { title: 'Friday', value1: 22, value2: 73 },
+    // { title: 'Saturday', value1: 53, value2: 82 },
+    // { title: 'Sunday', value1: 9, value2: 69 },
   ]
 
   const progressGroupExample2 = [
-    { title: 'Male', icon: cilUser, value: 53 },
-    { title: 'Female', icon: cilUserFemale, value: 43 },
+    // { title: 'Male', icon: cilUser, value: 53 },
+    // { title: 'Female', icon: cilUserFemale, value: 43 },
   ]
 
   const progressGroupExample3 = [
-    { title: 'Organic Search', icon: cibGoogle, percent: 56, value: '191,235' },
-    { title: 'Facebook', icon: cibFacebook, percent: 15, value: '51,223' },
-    { title: 'Twitter', icon: cibTwitter, percent: 11, value: '37,564' },
-    { title: 'LinkedIn', icon: cibLinkedin, percent: 8, value: '27,319' },
+    // { title: 'Organic Search', icon: cibGoogle, percent: 56, value: '191,235' },
+    // { title: 'Facebook', icon: cibFacebook, percent: 15, value: '51,223' },
+    // { title: 'Twitter', icon: cibTwitter, percent: 11, value: '37,564' },
+    // { title: 'LinkedIn', icon: cibLinkedin, percent: 8, value: '27,319' },
   ]
 
   const tableExample = [
-    {
-      avatar: { src: avatar1, status: 'success' },
-      user: {
-        name: 'Yiorgos Avraamu',
-        new: true,
-        registered: 'Jan 1, 2023',
-      },
-      country: { name: 'USA', flag: cifUs },
-      usage: {
-        value: 50,
-        period: 'Jun 11, 2023 - Jul 10, 2023',
-        color: 'success',
-      },
-      payment: { name: 'Mastercard', icon: cibCcMastercard },
-      activity: '10 sec ago',
-    },
-    {
-      avatar: { src: avatar2, status: 'danger' },
-      user: {
-        name: 'Avram Tarasios',
-        new: false,
-        registered: 'Jan 1, 2023',
-      },
-      country: { name: 'Brazil', flag: cifBr },
-      usage: {
-        value: 22,
-        period: 'Jun 11, 2023 - Jul 10, 2023',
-        color: 'info',
-      },
-      payment: { name: 'Visa', icon: cibCcVisa },
-      activity: '5 minutes ago',
-    },
-    {
-      avatar: { src: avatar3, status: 'warning' },
-      user: { name: 'Quintin Ed', new: true, registered: 'Jan 1, 2023' },
-      country: { name: 'India', flag: cifIn },
-      usage: {
-        value: 74,
-        period: 'Jun 11, 2023 - Jul 10, 2023',
-        color: 'warning',
-      },
-      payment: { name: 'Stripe', icon: cibCcStripe },
-      activity: '1 hour ago',
-    },
-    {
-      avatar: { src: avatar4, status: 'secondary' },
-      user: { name: 'Enéas Kwadwo', new: true, registered: 'Jan 1, 2023' },
-      country: { name: 'France', flag: cifFr },
-      usage: {
-        value: 98,
-        period: 'Jun 11, 2023 - Jul 10, 2023',
-        color: 'danger',
-      },
-      payment: { name: 'PayPal', icon: cibCcPaypal },
-      activity: 'Last month',
-    },
-    {
-      avatar: { src: avatar5, status: 'success' },
-      user: {
-        name: 'Agapetus Tadeáš',
-        new: true,
-        registered: 'Jan 1, 2023',
-      },
-      country: { name: 'Spain', flag: cifEs },
-      usage: {
-        value: 22,
-        period: 'Jun 11, 2023 - Jul 10, 2023',
-        color: 'primary',
-      },
-      payment: { name: 'Google Wallet', icon: cibCcApplePay },
-      activity: 'Last week',
-    },
-    {
-      avatar: { src: avatar6, status: 'danger' },
-      user: {
-        name: 'Friderik Dávid',
-        new: true,
-        registered: 'Jan 1, 2023',
-      },
-      country: { name: 'Poland', flag: cifPl },
-      usage: {
-        value: 43,
-        period: 'Jun 11, 2023 - Jul 10, 2023',
-        color: 'success',
-      },
-      payment: { name: 'Amex', icon: cibCcAmex },
-      activity: 'Last week',
-    },
+    // {
+    //   avatar: { src: avatar1, status: 'success' },
+    //   user: {
+    //     name: ' Avraamu',
+    //     new: true,
+    //     registered: 'Jan 1, 2023',
+    //   },
+    //   country: { name: 'USA', flag: cifUs },
+    //   usage: {
+    //     value: 50,
+    //     period: 'Jun 11, 2023 - Jul 10, 2023',
+    //     color: 'success',
+    //   },
+    //   payment: { name: 'Mastercard', icon: cibCcMastercard },
+    //   activity: '10 sec ago',
+    // },
+    // {
+    //   avatar: { src: avatar2, status: 'danger' },
+    //   user: {
+    //     name: 'Avram Tarasios',
+    //     new: false,
+    //     registered: 'Jan 1, 2023',
+    //   },
+    //   country: { name: 'Brazil', flag: cifBr },
+    //   usage: {
+    //     value: 22,
+    //     period: 'Jun 11, 2023 - Jul 10, 2023',
+    //     color: 'info',
+    //   },
+    //   payment: { name: 'Visa', icon: cibCcVisa },
+    //   activity: '5 minutes ago',
+    // },
+    // {
+    //   avatar: { src: avatar3, status: 'warning' },
+    //   user: { name: 'Quintin Ed', new: true, registered: 'Jan 1, 2023' },
+    //   country: { name: 'India', flag: cifIn },
+    //   usage: {
+    //     value: 74,
+    //     period: 'Jun 11, 2023 - Jul 10, 2023',
+    //     color: 'warning',
+    //   },
+    //   payment: { name: 'Stripe', icon: cibCcStripe },
+    //   activity: '1 hour ago',
+    // },
+    // {
+    //   avatar: { src: avatar4, status: 'secondary' },
+    //   user: { name: 'Enéas Kwadwo', new: true, registered: 'Jan 1, 2023' },
+    //   country: { name: 'France', flag: cifFr },
+    //   usage: {
+    //     value: 98,
+    //     period: 'Jun 11, 2023 - Jul 10, 2023',
+    //     color: 'danger',
+    //   },
+    //   payment: { name: 'PayPal', icon: cibCcPaypal },
+    //   activity: 'Last month',
+    // },
+    // {
+    //   avatar: { src: avatar5, status: 'success' },
+    //   user: {
+    //     name: 'Agapetus Tadeáš',
+    //     new: true,
+    //     registered: 'Jan 1, 2023',
+    //   },
+    //   country: { name: 'Spain', flag: cifEs },
+    //   usage: {
+    //     value: 22,
+    //     period: 'Jun 11, 2023 - Jul 10, 2023',
+    //     color: 'primary',
+    //   },
+    //   payment: { name: 'Google Wallet', icon: cibCcApplePay },
+    //   activity: 'Last week',
+    // },
+    // {
+    //   avatar: { src: avatar6, status: 'danger' },
+    //   user: {
+    //     name: 'Friderik Dávid',
+    //     new: true,
+    //     registered: 'Jan 1, 2023',
+    //   },
+    //   country: { name: 'Poland', flag: cifPl },
+    //   usage: {
+    //     value: 43,
+    //     period: 'Jun 11, 2023 - Jul 10, 2023',
+    //     color: 'success',
+    //   },
+    //   payment: { name: 'Amex', icon: cibCcAmex },
+    //   activity: 'Last week',
+    // },
   ]
 
   return (
     <>
       <WidgetsDropdown className="mb-4" />
-      <CCard className="mb-4">
+      {/* <CCard className="mb-4">
         <CCardBody>
           <CRow>
             <CCol sm={5}>
               <h4 id="traffic" className="card-title mb-0">
-                Traffic
+                
               </h4>
               <div className="small text-body-secondary">January - July 2023</div>
             </CCol>
@@ -232,7 +232,7 @@ const Dashboard = () => {
             ))}
           </CRow>
         </CCardFooter>
-      </CCard>
+      </CCard> */}
       <WidgetsBrand className="mb-4" withCharts />
       <CRow>
         <CCol xs>
@@ -244,14 +244,14 @@ const Dashboard = () => {
                   <CRow>
                     <CCol xs={6}>
                       <div className="border-start border-start-4 border-start-info py-1 px-3">
-                        <div className="text-body-secondary text-truncate small">New Clients</div>
+                        <div className="text-body-secondary text-truncate small">Runtime</div>
                         <div className="fs-5 fw-semibold">9,123</div>
                       </div>
                     </CCol>
                     <CCol xs={6}>
                       <div className="border-start border-start-4 border-start-danger py-1 px-3 mb-3">
                         <div className="text-body-secondary text-truncate small">
-                          Recurring Clients
+                          Stoptime
                         </div>
                         <div className="fs-5 fw-semibold">22,643</div>
                       </div>
@@ -273,17 +273,18 @@ const Dashboard = () => {
                 <CCol xs={12} md={6} xl={6}>
                   <CRow>
                     <CCol xs={6}>
-                      <div className="border-start border-start-4 border-start-warning py-1 px-3 mb-3">
-                        <div className="text-body-secondary text-truncate small">Pageviews</div>
+                      <div className="border-start border-start-4 border-start-warning py-1 px-3 mb">
+                        <div className="text-body-secondary text-truncate small">Errortime</div>
                         <div className="fs-5 fw-semibold">78,623</div>
                       </div>
                     </CCol>
                     <CCol xs={6}>
                       <div className="border-start border-start-4 border-start-success py-1 px-3 mb-3">
-                        <div className="text-body-secondary text-truncate small">Organic</div>
+                        <div className="text-body-secondary text-truncate small">Failure Losstime</div>
                         <div className="fs-5 fw-semibold">49,123</div>
                       </div>
                     </CCol>
+                 
                   </CRow>
 
                   <hr className="mt-0" />
@@ -325,20 +326,20 @@ const Dashboard = () => {
 
               <CTable align="middle" className="mb-0 border" hover responsive>
                 <CTableHead className="text-nowrap">
-                  <CTableRow>
+                  {/* <CTableRow>
                     <CTableHeaderCell className="bg-body-tertiary text-center">
-                      <CIcon icon={cilPeople} />
+                      
                     </CTableHeaderCell>
-                    <CTableHeaderCell className="bg-body-tertiary">User</CTableHeaderCell>
+                    <CTableHeaderCell className="bg-body-tertiary"></CTableHeaderCell>
                     <CTableHeaderCell className="bg-body-tertiary text-center">
-                      Country
+                      
                     </CTableHeaderCell>
-                    <CTableHeaderCell className="bg-body-tertiary">Usage</CTableHeaderCell>
+                    <CTableHeaderCell className="bg-body-tertiary"></CTableHeaderCell>
                     <CTableHeaderCell className="bg-body-tertiary text-center">
-                      Payment Method
+                      
                     </CTableHeaderCell>
-                    <CTableHeaderCell className="bg-body-tertiary">Activity</CTableHeaderCell>
-                  </CTableRow>
+                    <CTableHeaderCell className="bg-body-tertiary"></CTableHeaderCell>
+                  </CTableRow> */}
                 </CTableHead>
                 <CTableBody>
                   {tableExample.map((item, index) => (
