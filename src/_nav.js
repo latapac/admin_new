@@ -15,6 +15,9 @@ import {
   cilStar,
 } from '@coreui/icons'
 import { CNavGroup, CNavItem, CNavTitle } from '@coreui/react'
+import { forEach } from 'core-js/core/array'
+
+const data= await fetch('https://64.227.139.217:3000')
 
 const machines = ["m1","m2","m3"]
 
@@ -22,12 +25,8 @@ const mitems = machines.map((item)=>{
   return {"component": CNavItem, "name": item,"to": '/base/accordion'}
 })
 
+
 const _nav = [
-  
-  // {
-  //   component: CNavTitle,
-  //   name: 'Components',
-  // },
   {
     component: CNavGroup,
     name: 'Machines',
