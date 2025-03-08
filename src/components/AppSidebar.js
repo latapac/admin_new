@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-
+import { CNavItem } from '@coreui/react'
 import {
   CCloseButton,
   CSidebar,
@@ -23,6 +23,11 @@ const AppSidebar = () => {
   const dispatch = useDispatch()
   const unfoldable = useSelector((state) => state.sidebarUnfoldable)
   const sidebarShow = useSelector((state) => state.sidebarShow)
+  const [machines,setMachines] = useState([ {"component": CNavItem, "name": "loading","to": '/base/accordion'}])
+
+  useEffect(()=>{
+    navigation().then((data)=>setMachines(data))
+  },[])
 
   return (
     <CSidebar
@@ -48,7 +53,7 @@ const AppSidebar = () => {
           onClick={() => dispatch({ type: 'set', sidebarShow: false })}
         />
       </CSidebarHeader>
-      <AppSidebarNav items={navigation} />
+      <AppSidebarNav items={machines} />
       <CSidebarFooter className="border-top d-none d-lg-flex">
         <CSidebarToggler
           onClick={() => dispatch({ type: 'set', sidebarUnfoldable: !unfoldable })}

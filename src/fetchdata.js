@@ -1,0 +1,1 @@
+const data= await fetch('http://192.168.31.159:3000/getMachine/CMP-2025228-11653580'); 
