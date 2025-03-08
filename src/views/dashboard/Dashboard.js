@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import classNames from 'classnames'
 
 import {
@@ -54,7 +54,16 @@ import WidgetsBrand from '../widgets/WidgetsBrand'
 import WidgetsDropdown from '../widgets/WidgetsDropdown'
 import MainChart from './MainChart'
 
+const obj={d:{"status":[3],"current_OEE":["NaN"],"current_speed":[0],
+  "Reciepe_Name":["Pacmac"],"Batch_Number":[""],"Good_Count":[79],
+  "Total_Production":[106],"Reject_Counters":[27]}, "ts":"2025-03-07T11:28:15.295884"}
+
 const Dashboard = () => {
+
+  const status = ["STOP","RUNNING","IDLE","ABORTED"]
+
+  const [md,setMd] = useState(obj)
+
   const progressExample = [
     { title: 'Visits', value: '29.703 Users', percent: 40, color: 'success' },
     { title: 'Unique', value: '24.093 Users', percent: 20, color: 'info' },
@@ -64,196 +73,49 @@ const Dashboard = () => {
   ]
 
   const progressGroupExample1 = [
-    // { title: 'Monday', value1: 34, value2: 78 },
-    // { title: 'Tuesday', value1: 56, value2: 94 },
-    // { title: 'Wednesday', value1: 12, value2: 67 },
-    // { title: 'Thursday', value1: 43, value2: 91 },
-    // { title: 'Friday', value1: 22, value2: 73 },
-    // { title: 'Saturday', value1: 53, value2: 82 },
-    // { title: 'Sunday', value1: 9, value2: 69 },
+   
   ]
 
   const progressGroupExample2 = [
-    // { title: 'Male', icon: cilUser, value: 53 },
-    // { title: 'Female', icon: cilUserFemale, value: 43 },
+    
   ]
 
   const progressGroupExample3 = [
-    // { title: 'Organic Search', icon: cibGoogle, percent: 56, value: '191,235' },
-    // { title: 'Facebook', icon: cibFacebook, percent: 15, value: '51,223' },
-    // { title: 'Twitter', icon: cibTwitter, percent: 11, value: '37,564' },
-    // { title: 'LinkedIn', icon: cibLinkedin, percent: 8, value: '27,319' },
+   
   ]
 
   const tableExample = [
-    // {
-    //   avatar: { src: avatar1, status: 'success' },
-    //   user: {
-    //     name: ' Avraamu',
-    //     new: true,
-    //     registered: 'Jan 1, 2023',
-    //   },
-    //   country: { name: 'USA', flag: cifUs },
-    //   usage: {
-    //     value: 50,
-    //     period: 'Jun 11, 2023 - Jul 10, 2023',
-    //     color: 'success',
-    //   },
-    //   payment: { name: 'Mastercard', icon: cibCcMastercard },
-    //   activity: '10 sec ago',
-    // },
-    // {
-    //   avatar: { src: avatar2, status: 'danger' },
-    //   user: {
-    //     name: 'Avram Tarasios',
-    //     new: false,
-    //     registered: 'Jan 1, 2023',
-    //   },
-    //   country: { name: 'Brazil', flag: cifBr },
-    //   usage: {
-    //     value: 22,
-    //     period: 'Jun 11, 2023 - Jul 10, 2023',
-    //     color: 'info',
-    //   },
-    //   payment: { name: 'Visa', icon: cibCcVisa },
-    //   activity: '5 minutes ago',
-    // },
-    // {
-    //   avatar: { src: avatar3, status: 'warning' },
-    //   user: { name: 'Quintin Ed', new: true, registered: 'Jan 1, 2023' },
-    //   country: { name: 'India', flag: cifIn },
-    //   usage: {
-    //     value: 74,
-    //     period: 'Jun 11, 2023 - Jul 10, 2023',
-    //     color: 'warning',
-    //   },
-    //   payment: { name: 'Stripe', icon: cibCcStripe },
-    //   activity: '1 hour ago',
-    // },
-    // {
-    //   avatar: { src: avatar4, status: 'secondary' },
-    //   user: { name: 'Enéas Kwadwo', new: true, registered: 'Jan 1, 2023' },
-    //   country: { name: 'France', flag: cifFr },
-    //   usage: {
-    //     value: 98,
-    //     period: 'Jun 11, 2023 - Jul 10, 2023',
-    //     color: 'danger',
-    //   },
-    //   payment: { name: 'PayPal', icon: cibCcPaypal },
-    //   activity: 'Last month',
-    // },
-    // {
-    //   avatar: { src: avatar5, status: 'success' },
-    //   user: {
-    //     name: 'Agapetus Tadeáš',
-    //     new: true,
-    //     registered: 'Jan 1, 2023',
-    //   },
-    //   country: { name: 'Spain', flag: cifEs },
-    //   usage: {
-    //     value: 22,
-    //     period: 'Jun 11, 2023 - Jul 10, 2023',
-    //     color: 'primary',
-    //   },
-    //   payment: { name: 'Google Wallet', icon: cibCcApplePay },
-    //   activity: 'Last week',
-    // },
-    // {
-    //   avatar: { src: avatar6, status: 'danger' },
-    //   user: {
-    //     name: 'Friderik Dávid',
-    //     new: true,
-    //     registered: 'Jan 1, 2023',
-    //   },
-    //   country: { name: 'Poland', flag: cifPl },
-    //   usage: {
-    //     value: 43,
-    //     period: 'Jun 11, 2023 - Jul 10, 2023',
-    //     color: 'success',
-    //   },
-    //   payment: { name: 'Amex', icon: cibCcAmex },
-    //   activity: 'Last week',
-    // },
+   
   ]
 
   return (
     <>
-      <WidgetsDropdown className="mb-4" />
-      {/* <CCard className="mb-4">
-        <CCardBody>
-          <CRow>
-            <CCol sm={5}>
-              <h4 id="traffic" className="card-title mb-0">
-                
-              </h4>
-              <div className="small text-body-secondary">January - July 2023</div>
-            </CCol>
-            <CCol sm={7} className="d-none d-md-block">
-              <CButton color="primary" className="float-end">
-                <CIcon icon={cilCloudDownload} />
-              </CButton>
-              <CButtonGroup className="float-end me-3">
-                {['Day', 'Month', 'Year'].map((value) => (
-                  <CButton
-                    color="outline-secondary"
-                    key={value}
-                    className="mx-0"
-                    active={value === 'Month'}
-                  >
-                    {value}
-                  </CButton>
-                ))}
-              </CButtonGroup>
-            </CCol>
-          </CRow>
-          <MainChart />
-        </CCardBody>
-        <CCardFooter>
-          <CRow
-            xs={{ cols: 1, gutter: 4 }}
-            sm={{ cols: 2 }}
-            lg={{ cols: 4 }}
-            xl={{ cols: 5 }}
-            className="mb-2 text-center"
-          >
-            {progressExample.map((item, index, items) => (
-              <CCol
-                className={classNames({
-                  'd-none d-xl-block': index + 1 === items.length,
-                })}
-                key={index}
-              >
-                <div className="text-body-secondary">{item.title}</div>
-                <div className="fw-semibold text-truncate">
-                  {item.value} ({item.percent}%)
-                </div>
-                <CProgress thin className="mt-2" color={item.color} value={item.percent} />
-              </CCol>
-            ))}
-          </CRow>
-        </CCardFooter>
-      </CCard> */}
+      <WidgetsDropdown className="mb-4"  tp={md.d.Total_Production[0]} gp={md.d.Good_Count[0]}
+      bp={md.d.Reject_Counters[0]} bno={md.d.Batch_Number[0]}/>
+      {}
       <WidgetsBrand className="mb-4" withCharts />
       <CRow>
         <CCol xs>
           <CCard className="mb-4">
-            <CCardHeader>Traffic {' & '} Sales</CCardHeader>
+            <CCardHeader>Timings</CCardHeader>
             <CCardBody>
               <CRow>
                 <CCol xs={12} md={6} xl={6}>
                   <CRow>
                     <CCol xs={6}>
                       <div className="border-start border-start-4 border-start-info py-1 px-3">
-                        <div className="text-body-secondary text-truncate small">Runtime</div>
-                        <div className="fs-5 fw-semibold">9,123</div>
+                        <div className="text-body-secondary text-truncate small">Recipe Name</div>
+                        <div className="fs-5 fw-semibold">{md.d.Reject_Counters[0]}</div>
                       </div>
                     </CCol>
                     <CCol xs={6}>
                       <div className="border-start border-start-4 border-start-danger py-1 px-3 mb-3">
                         <div className="text-body-secondary text-truncate small">
-                          Stoptime
+                          Status
                         </div>
-                        <div className="fs-5 fw-semibold">22,643</div>
+                        <div className="fs-5 fw-semibold">
+                          {status[md.d.status[0]]}
+                        </div>
                       </div>
                     </CCol>
                   </CRow>
@@ -274,14 +136,14 @@ const Dashboard = () => {
                   <CRow>
                     <CCol xs={6}>
                       <div className="border-start border-start-4 border-start-warning py-1 px-3 mb">
-                        <div className="text-body-secondary text-truncate small">Errortime</div>
-                        <div className="fs-5 fw-semibold">78,623</div>
+                        <div className="text-body-secondary text-truncate small">Current Speed</div>
+                        <div className="fs-5 fw-semibold">{md.d.current_speed[0]}</div>
                       </div>
                     </CCol>
                     <CCol xs={6}>
                       <div className="border-start border-start-4 border-start-success py-1 px-3 mb-3">
-                        <div className="text-body-secondary text-truncate small">Failure Losstime</div>
-                        <div className="fs-5 fw-semibold">49,123</div>
+                        <div className="text-body-secondary text-truncate small">Current OEE%</div>
+                        <div className="fs-5 fw-semibold">{md.d.current_OEE[0]}</div>
                       </div>
                     </CCol>
                  
@@ -326,20 +188,7 @@ const Dashboard = () => {
 
               <CTable align="middle" className="mb-0 border" hover responsive>
                 <CTableHead className="text-nowrap">
-                  {/* <CTableRow>
-                    <CTableHeaderCell className="bg-body-tertiary text-center">
-                      
-                    </CTableHeaderCell>
-                    <CTableHeaderCell className="bg-body-tertiary"></CTableHeaderCell>
-                    <CTableHeaderCell className="bg-body-tertiary text-center">
-                      
-                    </CTableHeaderCell>
-                    <CTableHeaderCell className="bg-body-tertiary"></CTableHeaderCell>
-                    <CTableHeaderCell className="bg-body-tertiary text-center">
-                      
-                    </CTableHeaderCell>
-                    <CTableHeaderCell className="bg-body-tertiary"></CTableHeaderCell>
-                  </CTableRow> */}
+                  {}
                 </CTableHead>
                 <CTableBody>
                   {tableExample.map((item, index) => (

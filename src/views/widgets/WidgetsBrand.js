@@ -36,7 +36,7 @@ const WidgetsBrand = (props) => {
 
   return (
     <CRow className={props.className} xs={{ gutter: 4 }}>
-      <CCol sm={6} xl={4} xxl={3}>
+      {/* <CCol sm={6} xl={4} xxl={3}>
         <CWidgetStatsD
           {...(props.withCharts && {
             chart: (
@@ -60,17 +60,10 @@ const WidgetsBrand = (props) => {
               />
             ),
           })}
-          icon={<CIcon height={52} className="my-4 text-white" />}
-          values={[
-            {value: 'Performance' },
-            {value: '459' },
-          ]}
-          style={{
-            '--cui-card-cap-bg': '#3b5998',
-          }}
+         
         />
-      </CCol>
-      <CCol sm={6} xl={4} xxl={3}>
+      </CCol> */}
+      {/* <CCol sm={6} xl={4} xxl={3}>
         <CWidgetStatsD
           {...(props.withCharts && {
             chart: (
@@ -103,8 +96,8 @@ const WidgetsBrand = (props) => {
             '--cui-card-cap-bg': '#00aced',
           }}
         />
-      </CCol>
-      <CCol sm={6} xl={4} xxl={3}>
+      </CCol> */}
+      {/* <CCol sm={6} xl={4} xxl={3}>
         <CWidgetStatsD
           {...(props.withCharts && {
             chart: (
@@ -137,7 +130,7 @@ const WidgetsBrand = (props) => {
             '--cui-card-cap-bg': '#4875b4',
           }}
         />
-      </CCol>
+      </CCol> */}
       {/* <CCol sm={6} xl={4} xxl={3}>
         <CWidgetStatsD
           color="warning"

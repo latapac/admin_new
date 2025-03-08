@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 
-import avatar from '../../../assets/images/avatars/blue.jpg'
+import avatar from '../../../assets/images/avatars/k.jpg'
 import {
   CButton,
   CCard,
@@ -65,11 +65,11 @@ const Login = () => {
                   </CForm>
                 </CCardBody>
               </CCard>
-              <CCard className="text-white bg-primary py-5" style={{ width: '44%' }}>
-                <CCardBody className="text-center">
-                  <img src={avatar} style={{width:"340px",height:"200px"}}></img>
-                </CCardBody>
-              </CCard>
+              
+                
+                  <img src={avatar} style={{width:"340px",height:"336px"}}></img>
+                
+            
             </CCardGroup>
           </CCol>
         </CRow>

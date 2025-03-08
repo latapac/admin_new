@@ -45,23 +45,13 @@ const WidgetsDropdown = (props) => {
           value={
             <>
               Total Production
-              
+              <span style={{margin:"30px"}}> 
+                {props.tp}
+              </span>
             </>
           }
          
-          // action={
-          //   <CDropdown alignment="end">
-          //     <CDropdownToggle color="transparent" caret={false} className="text-white p-0">
-          //       <CIcon icon={cilOptions} />
-          //     </CDropdownToggle>
-          //     <CDropdownMenu>
-          //       <CDropdownItem>Action</CDropdownItem>
-          //       <CDropdownItem>Another action</CDropdownItem>
-          //       <CDropdownItem>Something else here...</CDropdownItem>
-          //       <CDropdownItem disabled>Disabled action</CDropdownItem>
-          //     </CDropdownMenu>
-          //   </CDropdown>
-          // }
+          
           chart={
             <CChartLine
               ref={widgetChartRef1}
@@ -133,7 +123,9 @@ const WidgetsDropdown = (props) => {
           value={
             <>
               Good Production
-             
+              <span style={{margin:"30px"}}> 
+                {props.gp}
+              </span>
             </>
           }
          
@@ -208,7 +200,9 @@ const WidgetsDropdown = (props) => {
           value={
             <>
               Bad Production
-             
+              <span style={{margin:"30px"}}> 
+                {props.bp}
+              </span>
             </>
           }
         
