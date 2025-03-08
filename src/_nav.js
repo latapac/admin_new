@@ -15,7 +15,7 @@ import {
   cilStar,
 } from '@coreui/icons'
 import { CNavGroup, CNavItem, CNavTitle } from '@coreui/react'
-import { forEach } from 'core-js/core/array'
+// import { forEach } from 'core-js/core/array'
 
 const data= await fetch('https://64.227.139.217:3000')
 
