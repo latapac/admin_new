@@ -32,7 +32,7 @@ const machines = machinedata.map((item)=>{
 })
 
 const mitems = machines.map((item)=>{
-  return {"component": CNavItem, "name": item,"to": '/base/accordion'}
+  return {"component": CNavItem, "name": item,"to": '/dashboard'}
 })
 
 

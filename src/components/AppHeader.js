@@ -29,6 +29,7 @@ import { AppBreadcrumb } from './index'
 import { AppHeaderDropdown } from './header/index'
 
 const AppHeader = (props) => {
+
   const headerRef = useRef()
   const { colorMode, setColorMode } = useColorModes('coreui-free-react-admin-template-theme')
 
@@ -57,12 +58,12 @@ const AppHeader = (props) => {
               Dabur Silvassa
             </CNavLink>
           </CNavItem>
-         
+
         </CHeaderNav>
         <CHeaderNav className="ms-auto">
-         
+          <h6>{props.tms}</h6>
           <h5>Batch Number : <span>{props.bno}</span></h5>
-          
+
         </CHeaderNav>
         <CHeaderNav>
           <li className="nav-item py-1">

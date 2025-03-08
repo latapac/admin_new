@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import classNames from 'classnames'
+import React, { useState ,useEffect} from 'react'
+
 
 import {
   CAvatar,
@@ -54,15 +54,13 @@ import WidgetsBrand from '../widgets/WidgetsBrand'
 import WidgetsDropdown from '../widgets/WidgetsDropdown'
 import MainChart from './MainChart'
 
-const obj={d:{"status":[3],"current_OEE":["NaN"],"current_speed":[0],
-  "Reciepe_Name":["Pacmac"],"Batch_Number":[""],"Good_Count":[79],
-  "Total_Production":[106],"Reject_Counters":[27]}, "ts":"2025-03-07T11:28:15.295884"}
 
-const Dashboard = () => {
 
-  const status = ["STOP","RUNNING","IDLE","ABORTED"]
+const Dashboard = (props) => {
+   
 
-  const [md,setMd] = useState(obj)
+
+  const status = ["STOP", "RUNNING", "IDLE", "ABORTED"]
 
   const progressExample = [
     { title: 'Visits', value: '29.703 Users', percent: 40, color: 'success' },
@@ -73,26 +71,30 @@ const Dashboard = () => {
   ]
 
   const progressGroupExample1 = [
-   
+
   ]
 
   const progressGroupExample2 = [
-    
+
   ]
 
   const progressGroupExample3 = [
-   
+
   ]
 
   const tableExample = [
-   
+
   ]
+
+  const md = props.data
+
+
 
   return (
     <>
-      <WidgetsDropdown className="mb-4"  tp={md.d.Total_Production[0]} gp={md.d.Good_Count[0]}
-      bp={md.d.Reject_Counters[0]} bno={md.d.Batch_Number[0]}/>
-      {}
+      <WidgetsDropdown className="mb-4" tp={md.d.Total_Production[0]} gp={md.d.Good_Count[0]}
+        bp={md.d.Reject_Counters[0]} bno={md.d.Batch_Number[0]}/>
+      { }
       <WidgetsBrand className="mb-4" withCharts />
       <CRow>
         <CCol xs>
@@ -105,7 +107,7 @@ const Dashboard = () => {
                     <CCol xs={6}>
                       <div className="border-start border-start-4 border-start-info py-1 px-3">
                         <div className="text-body-secondary text-truncate small">Recipe Name</div>
-                        <div className="fs-5 fw-semibold">{md.d.Reject_Counters[0]}</div>
+                        <div className="fs-5 fw-semibold">{md.d.Reciepe_Name[0]}</div>
                       </div>
                     </CCol>
                     <CCol xs={6}>
@@ -146,7 +148,7 @@ const Dashboard = () => {
                         <div className="fs-5 fw-semibold">{md.d.current_OEE[0]}</div>
                       </div>
                     </CCol>
-                 
+
                   </CRow>
 
                   <hr className="mt-0" />
@@ -188,7 +190,7 @@ const Dashboard = () => {
 
               <CTable align="middle" className="mb-0 border" hover responsive>
                 <CTableHead className="text-nowrap">
-                  {}
+                  { }
                 </CTableHead>
                 <CTableBody>
                   {tableExample.map((item, index) => (

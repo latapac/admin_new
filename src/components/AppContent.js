@@ -2,10 +2,14 @@ import React, { Suspense } from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import { CContainer, CSpinner } from '@coreui/react'
 
+
+const Dashboard = React.lazy(() => import('../views/dashboard/Dashboard'))
+
 // routes config
 import routes from '../routes'
 
-const AppContent = () => {
+const AppContent = (props) => {
+  
   return (
     <CContainer className="px-4" lg>
       <Suspense fallback={<CSpinner color="primary" />}>
@@ -24,6 +28,10 @@ const AppContent = () => {
             )
           })}
           <Route path="/" element={<Navigate to="dashboard" replace />} />
+          <Route
+            path="/dashboard"
+            element={<Dashboard data={props.data} />}
+          />
         </Routes>
       </Suspense>
     </CContainer>
